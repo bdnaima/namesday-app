@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Names Day</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Names day</title>
 </head>
+
 <body>
-    <input id="userInput">
-    <select id="userInputCountry">
-        <option value="at">Austria</option>
-        <option value="hr">Croatia</option>
-        <option value="cz">Czechia</option>
-        <option value="dk">Denmark</option>
-        <option value="fi">Finland</option>
-        <option value="fr">France</option>
-        <option value="de">Germany</option>
-        <option value="hu">Hungary</option>
-        <option value="it">Italy</option>
-        <option value="pl">Poland</option>
-        <option value="sk">Slovakia</option>
-        <option value="es">Spain</option>
-        <option value="se">Sweden</option>
-        <option value="us">USA</option>
-    </select>
-    <button id="button">Enter</button>
+    <main class="container">
+        <h1>Name days</h1>
 
-    <h2>Name Day</h2>
-    <div id="nameInput">
+        <div class="input-group mb-3">
+            <input id="userInput" type="text" class="form-control" placeholder="Enter name"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+        <div class="country-option">
+        <h2>Choose country</h2>
+            <select id="userInputCountry">
+                <option value="at">Austria</option>
+                <option value="hr">Croatia</option>
+                <option value="cz">Czechia</option>
+                <option value="dk">Denmark</option>
+                <option value="fi">Finland</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="hu">Hungary</option>
+                <option value="it">Italy</option>
+                <option value="pl">Poland</option>
+                <option value="sk">Slovakia</option>
+                <option value="es">Spain</option>
+                <option value="se">Sweden</option>
+                <option value="us">USA</option>
+            </select>
+        </div>
 
-    </div>
+        <div class="input-group-append">
+            <button id="button" class="btn btn-dark" type="button">Enter</button>
+        </div>
 
-    <script src="assets/scripts/namesdayabalin.js"></script>
-    <script src="assets/scripts/app.js"></script>
+        
+        <div id="nameInput">
+
+        </div>
+
+        <script src="assets/scripts/namesdayabalin.js"></script>
+        <script src="assets/scripts/app.js"></script>
+    </main>
 </body>
+
 </html>
