@@ -12,15 +12,74 @@
 </head>
 
 <body>
-    <main class="container">
+    <header>
         <h1>Name days</h1>
+    </header>
+    <main class="container">
+        
+        <h1>Find name</h1 style="background: red;">
 
         <div class="input-group mb-3">
             <input id="userInput" type="text" class="form-control" placeholder="Enter name"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button id="button" class="btn btn-dark" type="button">Enter</button>
+            </div>        
         </div>
-        <div class="country-option">
-        <h2>Choose country</h2>
+        <h1>Choose date</h1>
+        <select id="userInputMonth">
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+        </select>
+
+        <select id="userInputDay">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="12">12</option>
+            <option value="13">12</option>
+            <option value="14">12</option>
+            <option value="15">12</option>
+            <option value="16">12</option>
+            <option value="17">12</option>
+            <option value="18">12</option>
+            <option value="19">12</option>
+            <option value="20">12</option>
+            <option value="21">12</option>
+            <option value="22">12</option>
+            <option value="23">12</option>
+            <option value="24">12</option>
+            <option value="25">12</option>
+            <option value="26">12</option>
+            <option value="27">12</option>
+            <option value="28">12</option>
+            <option value="29">12</option>
+            <option value="30">12</option>
+            <option value="31">12</option>
+        </select>
+        <div class="input-group-append">
+            <button id="dateButton" class="btn btn-dark" type="button">Get date</button>
+        </div> 
+        <h1>Choose country</h1>
             <select id="userInputCountry">
                 <option value="at">Austria</option>
                 <option value="hr">Croatia</option>
@@ -37,15 +96,12 @@
                 <option value="se">Sweden</option>
                 <option value="us">USA</option>
             </select>
-        </div>
-
-        <div class="input-group-append">
-            <button id="button" class="btn btn-dark" type="button">Enter</button>
-        </div>
-
-        
         <div id="nameInput">
-
+                <!-- <h1>Naima</h1>
+                <h3>Nov</h3>
+                <h3>17</h3>
+                <h2>Other names around the world</h2>
+                <p>${result.data[0].namedays}</p> -->
         </div>
 
         <script src="assets/scripts/namesdayabalin.js"></script>
