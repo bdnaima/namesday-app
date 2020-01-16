@@ -8,18 +8,21 @@
 }
 
 header {  
-    background-image: url("../images/background_name.jpg");
+    background-color: orange;
     padding: 1em;
 }
 
 header h1 {
     text-align: center;
+    color: white;
 }
 
 body {
 
-    background-color: lightseagreen;
-    color: white;
+    background-image: url("../images/myanmar02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
     font-family: open Sans, sans-serif;
 }
 
@@ -27,29 +30,34 @@ body {
     max-width: 960px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-
-select {
-    background-color: gray;
-    color: white;
-    font-size: 1.5em;
-    margin-bottom: 1em;
 }
 
 .input-group-append {
     justify-content: space-evenly;
 }
 
+select {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
 #nameInput {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+    
+}
+
+#date-marg {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    columns: brown;
 }
 
 h2, h3 {
@@ -61,11 +69,22 @@ h2, h3 {
 @media screen and (min-width: 768px) {
 
     .container {
-        margin-top: 10em;
+        flex-direction: row;
+        text-align: left;
     }
+
     .input-group {
-        max-width: 50%;
+        width: 100%;
     }
+
+    .input-group-append {
+        justify-content: flex-start;
+    }
+    
+    select {
+        width: 19.5em;
+    }
+
 }
 
 /* Desktop */
@@ -73,9 +92,20 @@ h2, h3 {
 @media screen and (min-width: 992px) {
 
     .container {
-        margin-top: 10em;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-evenly;
     }
+
     .input-group {
-        max-width: 50%;
+        width: 100%;
+    }
+
+    .input-group-append {
+        justify-content: flex-start;
+    }
+
+    select {
+        width: 19.5em;
     }
 }
