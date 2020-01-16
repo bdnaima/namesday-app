@@ -14,6 +14,7 @@ header {
 
 header h1 {
     text-align: center;
+    background-color: orange;
     color: white;
 }
 
@@ -38,6 +39,11 @@ body {
 
 .input-group-append {
     justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.result-flex {
+    margin: 2em;
 }
 
 select {
@@ -55,9 +61,19 @@ select {
 }
 
 #date-marg {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    columns: brown;
+    margin-top: 3.5em;
+}
+
+#error {
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+h4 {
+    background-color: rgb(94, 62, 4);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 h2, h3 {
@@ -107,5 +123,8 @@ h2, h3 {
 
     select {
         width: 19.5em;
+    }
+    button {
+        width: 50%;
     }
 }
